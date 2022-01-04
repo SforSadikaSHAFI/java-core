@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,11 +15,23 @@ public class Main {
         System.out.println("Name: "+ emp1.age);
          */
 
-        Teacher t1 = new Teacher("Hasnat", 25, "Male","CSE");
+       /* Teacher t1 = new Teacher("Hasnat", 25, "Male","CSE");
         t1.goesToWashroom();
 
         Staff s1 = new Staff("X",26,"Male","10");
         s1.goesToWashroom();
+        */
+        Scanner input = new Scanner(System.in);
 
+        System.out.print("Enter 1st number :");
+        int a = input.nextInt();
+        System.out.print("Enter 2nd number :");
+        int b = input.nextInt();
+        System.out.print("Enter 3rd number :");
+        int c = input.nextInt();
+        //input.Max(a,b,c);
+        PracticeMethods p1 = new PracticeMethods(a,b,c);
+        p1.Max();
+        p1.Min();
     }
 }
