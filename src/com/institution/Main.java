@@ -45,5 +45,8 @@ public class Main {
         //task 1
         Teacher teacher1 = new Teacher("Hasnat", 25, "Male","CSE");
         teacher1.goesToWashroom();
+        //task 2
+        Staff satff1 = new Staff("X",26,"Male","10");
+        satff1.goesToWashroom();
     }
 }
