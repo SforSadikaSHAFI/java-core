@@ -9,11 +9,14 @@ public class Staff extends Employee {
         super(name, age, gender);
         this.reportingTime = reportingTime;
     }
+    Staff(String name){
+        getName();
+    }
 
     @Override
     void goesToWashroom() {
         //        if(super.gender == "Male"){
-        System.out.println("Mr. "+ this.getName() +" is going to "+this.getGender()+" washroom for the staff" );
+        System.out.println("Mr. "+ getName() +" is going to "+getGender()+" washroom for the staff" );
 //            //super.goesToWashroom();
 //        }
 //        else {

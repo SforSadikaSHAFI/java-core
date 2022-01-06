@@ -48,5 +48,15 @@ public class Main {
         //task 2
         Staff satff1 = new Staff("X",26,"Male","10");
         satff1.goesToWashroom();
+
+         //task 3
+        GateKeeper gateKeeper1 = new GateKeeper("X",26,"Male","10");
+        gateKeeper1.closesGate();
+        gateKeeper1.opensGate();
+        //task 4
+        Peon peon1 = new Peon("Y",25,"Male","10");
+        peon1.makesTea();
+        peon1.postLetters();
+
     }
 }
