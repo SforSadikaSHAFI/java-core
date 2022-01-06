@@ -33,5 +33,8 @@ public class Main {
         PracticeMethods p1 = new PracticeMethods(a,b,c);
         p1.Max();
         p1.Min();
+        
+        //5. A stuff can be a gatekeeper that opens and closes gate.
+        //6. A stuff can be a peon that makes tea, post letters.
     }
 }
