@@ -62,6 +62,8 @@ public class Main {
 //        8. A math teacher needs to teach geometry and algebra
         //task 7
         MathTeacher mathTeacher1 = new MathTeacher("Hasnat", 25, "Male","Math");
+        mathTeacher1.teachesAlgebra();
+        mathTeacher1.teachesGeometry();
 
 
     }
