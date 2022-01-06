@@ -1,7 +1,12 @@
 package com.institution;
 
 public class Staff extends Employee {
-    String reportingTime;
+    private String reportingTime;
+
+    public String getReportingTime() {
+        return reportingTime;
+    }
+
     Staff(){
 
     }
