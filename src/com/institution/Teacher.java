@@ -23,13 +23,13 @@ public class Teacher extends Employee{
     }
 
     void teachesMath(){
-        System.out.println(getName()+ " teaches math");
+        System.out.println(getName()+ " teaches math.");
     }
     void teachesEnglish(){
-        System.out.println(getName()+ " teaches English");
+        System.out.println(getName()+ " teaches English.");
     }
     void teachesIct(){
-        System.out.println(getName()+ " teaches ICT");
+        System.out.println(getName()+ " teaches ICT.");
     }
 
 }
