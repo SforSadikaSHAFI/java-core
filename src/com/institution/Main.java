@@ -65,6 +65,14 @@ public class Main {
         mathTeacher1.teachesAlgebra();
         mathTeacher1.teachesGeometry();
 
+//        9. A teacher may only teach science
+//        10. A science teacher needs to teach physics and chemistry
+        ScienceTeacher scienceTeacher1 = new ScienceTeacher("Waliul", 27, "Male","Science");
+        scienceTeacher1.teachesPhysics();
+        scienceTeacher1.teachesChemistry();
+
+
+
 
 
     }
