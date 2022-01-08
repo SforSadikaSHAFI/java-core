@@ -59,11 +59,12 @@ public class Main {
         peon1.postLetters();
 
 //        7. A teacher may only teach math
-//        8. A math teacher needs to teach geometry and algebra
-        //task 7
-        MathTeacher mathTeacher1 = new MathTeacher("Hasnat", 25, "Male","Math");
-        mathTeacher1.teachesAlgebra();
-        mathTeacher1.teachesGeometry();
+////        8. A math teacher needs to teach geometry and algebra
+//        //task 7
+//        MathTeacher mathTeacher1 = new MathTeacher("Hasnat", 25, "Male","Math");
+//        mathTeacher1.teachesAlgebra();
+//        mathTeacher1.teachesGeometry();
+
 
 
     }
