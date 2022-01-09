@@ -1,9 +1,11 @@
 package com.institution;
 
 
-//import com.company.PracticeMethods;
-
-//import java.util.Scanner;
+import com.institute.*;
+import com.institute.MathTeacher;
+import com.institute.ScienceTeacher;
+import com.institute.Staff;
+import com.institute.Teacher;
 
 public class Main {
 
@@ -41,51 +43,95 @@ public class Main {
         //5. A stuff can be a gatekeeper that opens and closes gate.
         //6. A stuff can be a peon that makes tea, post letters.
 
-        Employee employee1 = new Employee();
-        //task 1
-        Teacher teacher1 = new Teacher("Hasnat", 25, "Male","CSE");
-        teacher1.goesToWashroom();
-        //task 2
-        Staff satff1 = new Staff("X",26,"Male","10");
-        satff1.goesToWashroom();
+//        Employee employee1 = new Employee();
+//        //task 1
+//        Teacher teacher1 = new Teacher("Hasnat", 25, "Male","CSE");
+//        teacher1.goesToWashroom();
+//        //task 2
+//        Staff satff1 = new Staff("X",26,"Male","10");
+//        satff1.goesToWashroom();
+//
+//         //task 3
+//        GateKeeper gateKeeper1 = new GateKeeper("X",26,"Male","10");
+//        gateKeeper1.closesGate();
+//        gateKeeper1.opensGate();
+//        //task 4
+//        Peon peon1 = new Peon("Y",25,"Male","10");
+//        peon1.makesTea();
+//        peon1.postLetters();
+//
+////        7. A teacher may only teach math
+////        8. A math teacher needs to teach geometry and algebra
+////        //task 7 & 8
+//        MathTeacher mathTeacher1 = new MathTeacher("Hasnat", 25, "Male","Math");
+//        mathTeacher1.teachesAlgebra();
+//        mathTeacher1.teachesGeometry();
+//
+////        9. A teacher may only teach science
+////        10. A science teacher needs to teach physics and chemistry
+//        ScienceTeacher scienceTeacher1 = new ScienceTeacher("Waliul", 27, "Male","Science");
+//        scienceTeacher1.teachesPhysics();
+//        scienceTeacher1.teachesChemistry();
+//
+////        11. At times, a science teacher might have to teach math as well
+//
+////        scienceTeacher1.teachesAlgebra();
+////        scienceTeacher1.teachesGeometry();
+//
+//        // 12. All teachers take exam
+//        //13. Teachers may take exam in quiz format
+//
+//        //task 12
+//        scienceTeacher1.takeExam();
+//        mathTeacher1.takeExam();
+//
+//        //task 13
+//        scienceTeacher1.takeQuiz();
+//        mathTeacher1.takeQuiz();
 
-         //task 3
-        GateKeeper gateKeeper1 = new GateKeeper("X",26,"Male","10");
-        gateKeeper1.closesGate();
-        gateKeeper1.opensGate();
-        //task 4
-        Peon peon1 = new Peon("Y",25,"Male","10");
-        peon1.makesTea();
-        peon1.postLetters();
 
-//        7. A teacher may only teach math
-//        8. A math teacher needs to teach geometry and algebra
-//        //task 7 & 8
-        MathTeacher mathTeacher1 = new MathTeacher("Hasnat", 25, "Male","Math");
-        mathTeacher1.teachesAlgebra();
-        mathTeacher1.teachesGeometry();
+//        Teacher teacher = new Teacher("James", 30, Gender.Male, Department.Science);
+//        teacher.goToWashroom();
 
-//        9. A teacher may only teach science
-//        10. A science teacher needs to teach physics and chemistry
-        ScienceTeacher scienceTeacher1 = new ScienceTeacher("Waliul", 27, "Male","Science");
-        scienceTeacher1.teachesPhysics();
-        scienceTeacher1.teachesChemistry();
+        Staff staff = new Staff("Jason", 27, Gender.Male, 830);
+        staff.goToWashroom();
 
-//        11. At times, a science teacher might have to teach math as well
+        GatekeeperStaff gatekeeperStaff = new GatekeeperStaff("Walter",35,Gender.Male,930);
+        gatekeeperStaff.goToWashroom();
+        gatekeeperStaff.openGate();
+        gatekeeperStaff.closeGate();
 
-//        scienceTeacher1.teachesAlgebra();
-//        scienceTeacher1.teachesGeometry();
+        PeonStaff peonStaff = new PeonStaff("John",28,Gender.Male,800);
+        peonStaff.makeTea();
+        peonStaff.postLetter();
+        peonStaff.goToWashroom();
 
-        // 12. All teachers take exam
-        //13. Teachers may take exam in quiz format
+        MathTeacher mathTeacher = new MathTeacher("Robert", 34, Gender.Male, Department.Science);
+        mathTeacher.goToWashroom();
+        mathTeacher.teachAlgebra();
+        mathTeacher.teachGeometry();
+        mathTeacher.takeExam();
+        mathTeacher.takeExam(true);
+        mathTeacher.takeExam(false);
 
-        //task 12
-        scienceTeacher1.takeExam();
-        mathTeacher1.takeExam();
+        ScienceTeacher sciTeacher = new ScienceTeacher("Rebeca", 27, Gender.Female, Department.Science);
+        sciTeacher.goToWashroom();
+        sciTeacher.teachesPhysics();
+        sciTeacher.teachesChemistry();
+        sciTeacher.teachAlgebra();
+        sciTeacher.teachGeometry();
+        sciTeacher.takeExam();
+        sciTeacher.takeExam(true);
+        sciTeacher.takeExam(false);
 
-        //task 13
-        scienceTeacher1.takeQuiz();
-        mathTeacher1.takeQuiz();
+
+
+        /*
+        * Encapsulation
+        * Abstraction
+        * Inheritance
+        * Polymorphism
+        * */
 
     }
 }
