@@ -7,7 +7,7 @@ MathTeacher(String name,int age,String gender,String dept){
     //super.teachesMath();
 }
 
-void teachesAlgebra(){
+    void teachesAlgebra(){
     System.out.println(getName()+" teaches Algebra.");
 }
     void teachesGeometry(){

@@ -71,6 +71,14 @@ public class Main {
         scienceTeacher1.teachesPhysics();
         scienceTeacher1.teachesChemistry();
 
+//        11. At times, a science teacher might have to teach math as well
+
+         scienceTeacher1.teachesAlgebra();
+         scienceTeacher1.teachesGeometry();
+
+
+
+
 
 
 

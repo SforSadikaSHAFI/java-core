@@ -13,4 +13,11 @@ public class ScienceTeacher extends Teacher{
         System.out.println(getName()+" teaches chemistry.");
     }
 
+    void teachesAlgebra(){
+        System.out.println(getName()+" teaches Algebra.");
+    }
+    void teachesGeometry(){
+        System.out.println(getName()+" teaches Geometry.");
+    }
+
 }
