@@ -1,6 +1,7 @@
 package com.institution;
 
 
+import com.finalInstitute.Problem;
 import com.institute.*;
 import com.institute.MathTeacher;
 import com.institute.ScienceTeacher;
@@ -133,5 +134,13 @@ public class Main {
         * Polymorphism
         * */
 
+        // return the larger integer
+
+//        System.out.println(exmple());
+        Problem prob = new Problem();
+        System.out.println(prob.example(5,6).toString());
+
     }
+
+
 }

@@ -22,6 +22,5 @@ public abstract class Employee {
     public Gender getGender() {
         return gender;
     }
-
     public abstract void goToWashroom();
 }
