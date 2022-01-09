@@ -13,11 +13,16 @@ public class ScienceTeacher extends Teacher implements IMath,IScience{
         System.out.println(getName()+" teaches chemistry.");
     }
 
-   public  void teachesAlgebra(){
+    public  void teachesAlgebra(){
         System.out.println(getName()+" teaches Algebra.");
     }
-   public  void teachesGeometry(){
+    public  void teachesGeometry(){
         System.out.println(getName()+" teaches Geometry.");
     }
 
+    @Override
+    void takeExam() {
+      //  super.takeExam();
+        System.out.println(getName()+" Takes exam" );
+    }
 }

@@ -16,5 +16,9 @@ public class MathTeacher extends Teacher implements IMath {
         System.out.println(getName() + " teaches Geometry.");
     }
 
-
+    @Override
+    void takeExam() {
+       // super.takeExam();
+        System.out.println(getName()+" Takes exam" );
+    }
 }

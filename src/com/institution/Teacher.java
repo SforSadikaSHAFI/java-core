@@ -21,6 +21,9 @@ public class Teacher extends Employee{
 //         }
 
     }
+    void takeExam(){
+        System.out.println("Takes exam" );
+    }
 
 
 }

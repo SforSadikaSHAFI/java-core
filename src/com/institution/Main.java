@@ -73,14 +73,15 @@ public class Main {
 
 //        11. At times, a science teacher might have to teach math as well
 
-        scienceTeacher1.teachesAlgebra();
-        scienceTeacher1.teachesGeometry();
+//        scienceTeacher1.teachesAlgebra();
+//        scienceTeacher1.teachesGeometry();
 
+        // 12. All teachers take exam
+        //13. Teachers may take exam in quiz format
 
-
-
-
-
-
+        //task 12
+        scienceTeacher1.takeExam();
+        mathTeacher1.takeExam();
+        
     }
 }
