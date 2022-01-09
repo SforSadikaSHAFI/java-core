@@ -1,22 +1,22 @@
 package com.institution;
 
-public class ScienceTeacher extends Teacher{
+public class ScienceTeacher extends Teacher implements IMath,IScience{
     ScienceTeacher(String name,int age,String gender,String dept){
         super(name, age, gender, dept);
         //super.teachesMath();
     }
 
-    void teachesPhysics(){
+    public void teachesPhysics(){
         System.out.println(getName()+" teaches physics.");
     }
-    void teachesChemistry(){
+    public void teachesChemistry(){
         System.out.println(getName()+" teaches chemistry.");
     }
 
-    void teachesAlgebra(){
+   public  void teachesAlgebra(){
         System.out.println(getName()+" teaches Algebra.");
     }
-    void teachesGeometry(){
+   public  void teachesGeometry(){
         System.out.println(getName()+" teaches Geometry.");
     }
 
