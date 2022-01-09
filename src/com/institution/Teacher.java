@@ -22,7 +22,7 @@ public class Teacher extends Employee{
 
     }
     void takeExam(){
-        System.out.println("Takes exam" );
+        System.out.println("Teacher Takes exam" );
     }
 
 

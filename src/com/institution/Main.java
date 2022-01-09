@@ -82,6 +82,6 @@ public class Main {
         //task 12
         scienceTeacher1.takeExam();
         mathTeacher1.takeExam();
-        
+
     }
 }
