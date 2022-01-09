@@ -19,6 +19,13 @@ public class MathTeacher extends Teacher implements IMath {
     @Override
     void takeExam() {
        // super.takeExam();
-        System.out.println(getName()+" Takes exam" );
+        System.out.println(getName()+" Takes exam." );
+    }
+
+    @Override
+    public void takeQuiz() {
+       // super.takeQuiz();
+        System.out.println(getName()+" Takes quiz." );
+
     }
 }

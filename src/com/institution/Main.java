@@ -83,5 +83,9 @@ public class Main {
         scienceTeacher1.takeExam();
         mathTeacher1.takeExam();
 
+        //task 13
+        scienceTeacher1.takeQuiz();
+        mathTeacher1.takeQuiz();
+
     }
 }

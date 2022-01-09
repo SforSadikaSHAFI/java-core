@@ -23,6 +23,12 @@ public class ScienceTeacher extends Teacher implements IMath,IScience{
     @Override
     void takeExam() {
       //  super.takeExam();
-        System.out.println(getName()+" Takes exam" );
+        System.out.println(getName()+" Takes exam." );
+    }
+
+    @Override
+    public void takeQuiz() {
+       // super.takeQuiz();
+        System.out.println(getName()+" Takes quiz." );
     }
 }

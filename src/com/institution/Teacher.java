@@ -1,6 +1,6 @@
 package com.institution;
 
-public class Teacher extends Employee{
+public class Teacher extends Employee implements IExams{
     private String dept;
     Teacher(){
 
@@ -22,8 +22,11 @@ public class Teacher extends Employee{
 
     }
     void takeExam(){
-        System.out.println("Teacher Takes exam" );
+        System.out.println("Teacher Takes exam." );
     }
 
-
+    @Override
+    public void takeQuiz() {
+        System.out.println("Teacher Takes quiz." );
+    }
 }
