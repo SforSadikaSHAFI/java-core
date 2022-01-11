@@ -1,10 +1,9 @@
-package com.institute;
+package com.finalInstitute;
 
 public abstract class Employee {
     private String name;
     private int age;
     private Gender gender;
-
     public Employee(String name, int age, Gender gender) {
         this.name = name;
         this.age = age;
@@ -22,5 +21,8 @@ public abstract class Employee {
     public Gender getGender() {
         return gender;
     }
+
     abstract void goToWashroom();
+
+
 }

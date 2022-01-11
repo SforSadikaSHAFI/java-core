@@ -1,4 +1,4 @@
-package com.institution;
+//package com.institution;
 
 
 import com.finalInstitute.Problem;
@@ -7,6 +7,9 @@ import com.institute.MathTeacher;
 import com.institute.ScienceTeacher;
 import com.institute.Staff;
 import com.institute.Teacher;
+import com.finalInstitute.Employee;
+import com.finalInstitute.Teacher;
+
 
 public class Main {
 
@@ -94,36 +97,36 @@ public class Main {
 //        Teacher teacher = new Teacher("James", 30, Gender.Male, Department.Science);
 //        teacher.goToWashroom();
 
-        Staff staff = new Staff("Jason", 27, Gender.Male, 830);
-        staff.goToWashroom();
-
-        GatekeeperStaff gatekeeperStaff = new GatekeeperStaff("Walter",35,Gender.Male,930);
-        gatekeeperStaff.goToWashroom();
-        gatekeeperStaff.openGate();
-        gatekeeperStaff.closeGate();
-
-        PeonStaff peonStaff = new PeonStaff("John",28,Gender.Male,800);
-        peonStaff.makeTea();
-        peonStaff.postLetter();
-        peonStaff.goToWashroom();
-
-        MathTeacher mathTeacher = new MathTeacher("Robert", 34, Gender.Male, Department.Science);
-        mathTeacher.goToWashroom();
-        mathTeacher.teachAlgebra();
-        mathTeacher.teachGeometry();
-        mathTeacher.takeExam();
-        mathTeacher.takeExam(true);
-        mathTeacher.takeExam(false);
-
-        ScienceTeacher sciTeacher = new ScienceTeacher("Rebeca", 27, Gender.Female, Department.Science);
-        sciTeacher.goToWashroom();
-        sciTeacher.teachesPhysics();
-        sciTeacher.teachesChemistry();
-        sciTeacher.teachAlgebra();
-        sciTeacher.teachGeometry();
-        sciTeacher.takeExam();
-        sciTeacher.takeExam(true);
-        sciTeacher.takeExam(false);
+//        Staff staff = new Staff("Jason", 27, Gender.Male, 830);
+//        staff.goToWashroom();
+//
+//        GatekeeperStaff gatekeeperStaff = new GatekeeperStaff("Walter",35,Gender.Male,930);
+//        gatekeeperStaff.goToWashroom();
+//        gatekeeperStaff.openGate();
+//        gatekeeperStaff.closeGate();
+//
+//        PeonStaff peonStaff = new PeonStaff("John",28,Gender.Male,800);
+//        peonStaff.makeTea();
+//        peonStaff.postLetter();
+//        peonStaff.goToWashroom();
+//
+//        MathTeacher mathTeacher = new MathTeacher("Robert", 34, Gender.Male, Department.Science);
+//        mathTeacher.goToWashroom();
+//        mathTeacher.teachAlgebra();
+//        mathTeacher.teachGeometry();
+//        mathTeacher.takeExam();
+//        mathTeacher.takeExam(true);
+//        mathTeacher.takeExam(false);
+//
+//        ScienceTeacher sciTeacher = new ScienceTeacher("Rebeca", 27, Gender.Female, Department.Science);
+//        sciTeacher.goToWashroom();
+//        sciTeacher.teachesPhysics();
+//        sciTeacher.teachesChemistry();
+//        sciTeacher.teachAlgebra();
+//        sciTeacher.teachGeometry();
+//        sciTeacher.takeExam();
+//        sciTeacher.takeExam(true);
+//        sciTeacher.takeExam(false);
 
 
 
@@ -136,9 +139,14 @@ public class Main {
 
         // return the larger integer
 
-//        System.out.println(exmple());
-        Problem prob = new Problem();
-        System.out.println(prob.example(5,6).toString());
+////        System.out.println(exmple());
+//        Problem prob = new Problem();
+//        System.out.println(prob.example(5,6).toString());
+
+        //Final project
+
+        Teacher teacher = new Teacher("Albert",28, Gender.Male,Department.Science);
+
 
     }
 
