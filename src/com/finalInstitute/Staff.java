@@ -8,12 +8,12 @@ public class Staff extends Employee {
         this.reportingTime = reportingTime;
     }
 
-    public int getReportingTime() {
+    public int getReportingTime(){
         return reportingTime;
     }
 
     @Override
-    void goToWashroom() {
+    public void goToWashroom() {
         System.out.println(String.format("Mr. %s is going to %s washroom for the staffs.",getName(),getGender().name()));
     }
 

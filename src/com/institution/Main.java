@@ -1,14 +1,16 @@
-//package com.institution;
+package com.institution;
 
 
-import com.finalInstitute.Problem;
-import com.institute.*;
-import com.institute.MathTeacher;
-import com.institute.ScienceTeacher;
-import com.institute.Staff;
-import com.institute.Teacher;
-import com.finalInstitute.Employee;
+import com.finalInstitute.*;
+import com.finalInstitute.Staff;
 import com.finalInstitute.Teacher;
+//import com.institute.*;
+//import com.institute.MathTeacher;
+//import com.institute.ScienceTeacher;
+//import com.institute.Staff;
+//import com.institute.Teacher;
+//import com.finalInstitute.Employee;
+//import com.finalInstitute.Teacher;
 
 
 public class Main {
@@ -145,7 +147,10 @@ public class Main {
 
         //Final project
 
-        Teacher teacher = new Teacher("Albert",28, Gender.Male,Department.Science);
+        Teacher teacher = new Teacher("Albert",27,Gender.Male,Department.Science);
+        teacher.goToWashroom();
+        Staff staff = new Staff("Robert",26,Gender.Male,890);
+        staff.goToWashroom();
 
 
     }

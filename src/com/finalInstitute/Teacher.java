@@ -10,7 +10,7 @@ public class Teacher extends Employee {
     }
 
     @Override
-    void goToWashroom() {
+    public void goToWashroom() {
         System.out.println(String.format("Mr. %s is going to %s washroom for the teachers. ",getName(),getGender().name()));
     }
 }
