@@ -2,8 +2,12 @@ package com.institution;
 
 
 import com.finalInstitute.*;
+import com.finalInstitute.GateKeeper;
+import com.finalInstitute.MathTeacher;
+import com.finalInstitute.ScienceTeacher;
 import com.finalInstitute.Staff;
 import com.finalInstitute.Teacher;
+import com.sun.source.doctree.BlockTagTree;
 //import com.institute.*;
 //import com.institute.MathTeacher;
 //import com.institute.ScienceTeacher;
@@ -18,7 +22,7 @@ public class Main {
     public static void main(String[] args) {
 
         //  System.out.println("I love you ..thank you so much for everything.");
-	// write your code here
+        // write your code here
 
       /*  Employee emp1 =  new Employee();
 
@@ -133,11 +137,11 @@ public class Main {
 
 
         /*
-        * Encapsulation
-        * Abstraction
-        * Inheritance
-        * Polymorphism
-        * */
+         * Encapsulation
+         * Abstraction
+         * Inheritance
+         * Polymorphism
+         * */
 
         // return the larger integer
 
@@ -147,13 +151,39 @@ public class Main {
 
         //Final project
 
-        Teacher teacher = new Teacher("Albert",27,Gender.Male,Department.Science);
-        teacher.goToWashroom();
-        Staff staff = new Staff("Robert",26,Gender.Male,890);
+//        Teacher teacher = new Teacher("Albert",27,Gender.Male,Department.Science);
+//        teacher.goToWashroom();
+
+        Staff staff = new Staff("Robert", 26, Gender.Male, 890);
         staff.goToWashroom();
 
+        GateKeeperStaff gateKeeper = new GateKeeperStaff("Alison", 24, Gender.Male, 900);
+        gateKeeper.goToWashroom();
+        gateKeeper.openGate();
+        gateKeeper.closeGate();
+
+        PeonStaff peonStaff = new PeonStaff("John", 26, Gender.Male, 915);
+        peonStaff.goToWashroom();
+        peonStaff.makeTea();
+        peonStaff.postLetter();
+
+        MathTeacher mathTeacher = new MathTeacher("Jack", 32, Gender.Male, Department.Science);
+        mathTeacher.goToWashroom();
+        mathTeacher.teachAlgebra();
+        mathTeacher.teachGeometry();
+        mathTeacher.takeExam();
+        mathTeacher.takeExam(true);
+        mathTeacher.takeExam(false);
+
+        ScienceTeacher scienceTeacher = new ScienceTeacher("Rob", 35, Gender.Male, Department.Science);
+        scienceTeacher.goToWashroom();
+        scienceTeacher.teachChemistry();
+        scienceTeacher.teachPhysics();
+        scienceTeacher.teachAlgebra();
+        scienceTeacher.teachGeometry();
+        scienceTeacher.takeExam();
+        scienceTeacher.takeExam(true);
+        scienceTeacher.takeExam(false);
 
     }
-
-
 }

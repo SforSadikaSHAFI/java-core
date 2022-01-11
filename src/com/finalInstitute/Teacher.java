@@ -1,6 +1,6 @@
 package com.finalInstitute;
 
-public class Teacher extends Employee {
+public abstract class Teacher extends Employee {
 
     private Department dept;
 
@@ -13,4 +13,7 @@ public class Teacher extends Employee {
     public void goToWashroom() {
         System.out.println(String.format("Mr. %s is going to %s washroom for the teachers. ",getName(),getGender().name()));
     }
+
+    abstract void takeExam();
+    abstract void takeExam(boolean isQuiz);
 }
