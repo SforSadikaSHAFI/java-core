@@ -185,5 +185,12 @@ public class Main {
         scienceTeacher.takeExam(true);
         scienceTeacher.takeExam(false);
 
+
+        MathTeacher mathTeacher1 = new MathTeacher("Rebecca",34,Gender.Female,Department.Science);
+        mathTeacher1.goToWashroom();
+
+        PeonStaff peonStaff1 = new PeonStaff("Jolly",27,Gender.Female,940);
+        peonStaff1.goToWashroom();
+
     }
 }

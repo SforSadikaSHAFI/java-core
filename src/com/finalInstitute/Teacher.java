@@ -11,7 +11,10 @@ public abstract class Teacher extends Employee {
 
     @Override
     public void goToWashroom() {
-        System.out.println(String.format("Mr. %s is going to %s washroom for the teachers. ",getName(),getGender().name()));
+        if(getGender().name()=="Male") {
+            System.out.println(String.format("Mr. %s is going to %s washroom for the teachers. ", getName(), getGender().name()));
+        }
+        else  System.out.println(String.format("Ms. %s is going to %s washroom for the teachers. ", getName(), getGender().name()));
     }
 
     abstract void takeExam();
